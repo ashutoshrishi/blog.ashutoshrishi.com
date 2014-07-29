@@ -1,0 +1,140 @@
+@dark-blue: rgba(8, 78, 138, 1);
+@base-blue: rgba(24, 116, 222, 1);
+@base-red: rgba(186, 67, 67, 1);
+@base-green: rgba(3, 134, 74, 1);
+
+
+.boxybutton {
+    padding: 3px 10px 5px 10px;
+    background-color: #CCC;
+    margin-right: 10px;
+
+    a {
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+        
+   
+}
+
+.boxybutton-normal {
+    .boxybutton;
+    background-color: rgba(237, 236, 236, 1);
+    box-shadow: 5px 5px 0px 0px #369, 10px 10px 0px 0px rgba(177, 177, 177, 1);
+    
+    &:hover {
+        box-shadow: 5px 5px 0px 0px rgba(174, 171, 171, 1), 10px 10px 0px 0px #336699;
+    }
+}
+
+.boxybutton-blue {
+    .boxybutton;
+    background-color: lighten(@base-blue, 10%);
+    box-shadow: 5px 5px 0px 0px rgba(2, 87, 173, 1), 10px 10px 0px 0px rgba(100, 206, 255, 1), 15px 15px 0px 0px lighten(@base-blue, 35%);
+    color: #FFF;
+    
+    &:hover {
+        background-color: lighten(@base-blue, 20%);
+        box-shadow: 5px 5px 0px 0px rgba(100, 206, 255, 1), 10px 10px 0px 0px rgba(2, 87, 173, 1);
+    }
+    
+    a {
+        color: #fff;
+    }
+}
+
+.boxybutton-light {
+    .boxybutton;
+    background: #EFEFEF;
+    box-shadow: 5px 5px 0px #DDD, 10px 10px 0px #eee, 15px 15px 0px #efefef;
+}
+
+
+.boxybutton-red {
+    .boxybutton;
+    background-color: @base-red;
+    box-shadow: 5px 5px 0px 0px darken(@base-red, 15%), 10px 10px 0px 0px lighten(@base-red, 20%), 15px 15px 0px 0px lighten(@base-red, 30%);
+    color: #FFF;
+}
+
+.boxybutton-green {
+    .boxybutton;
+    background-color: rgb(140, 143, 142);
+    box-shadow: 5px 5px 0px 0px lighten(@base-green, 5%),
+    10px 10px 0px 0px lighten(@base-green, 20%),
+    15px 15px 0px 0px lighten(@base-green, 35%);
+    color: #FFF;
+
+    a {
+        color: #fff;
+    }
+
+    &:hover {
+        box-shadow: 5px 5px #05ea81,10px 10px #41fba6, 15px 15px 0px 0px #90FFCC;
+        background: rgb(140, 143, 142);
+    }
+}
+
+.boxybutton-gray {
+    .boxybutton;
+    background-color: rgb(140, 143, 142);
+    box-shadow: 5px 5px 0 0 #B4B4B4,10px 10px 0 0 #C9C9C9,15px 15px 0 0 #DFDFDF;
+}
+
+
+.shout {
+    font-size: 1.5em;
+    margin: auto;
+    margin-bottom: 7px;
+    font-weight: 100;
+}    
+
+.shoutout {
+    background-color: lighten(rgba(94, 104, 99, 1), 10%);
+    .shout;
+}
+
+.shoutout-red {
+    .shout;
+    font-size: 2em;
+}
+.shoutout-blue {
+    .shout;
+}
+
+.shoutout-gray {
+    .shout;
+    background: #e6e6e6;
+    font-size: 1.5em;
+}
+
+.sidelinks li a {
+    text-decoration: none;
+}
+
+.sidelinks {
+    margin-top: 10px;
+    
+    li {
+        display: inline-block;
+    }
+    
+    li a {
+        color: @dark-blue;
+        font-size: 0.8em;
+        
+    }
+
+    span {
+        margin-right: 25px;
+    }
+}
+
+hr {
+    border-color: #CCC;
+}
+
+.aboutbox {
+    padding-left: 25px;
+    padding-top: 10px
+}

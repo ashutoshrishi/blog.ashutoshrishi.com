@@ -1,0 +1,131 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Oswald:300);
+body {
+   font-family: "Helvetica Neue", Helvetica, "Open Sans", sans-serif;
+   font-weight: 300;
+   background-color: #ffffff;
+   min-height: 100%;
+}
+
+.home {
+	background-image: url("../images/logo-retina@2x.png");
+	background-position: center ;
+	background-repeat: no-repeat;
+	background-size: 220px 220px;
+	min-height: 240px;
+        text-align: center;
+        //box-shadow: 5px 5px 0px #707070, 10px 10px 0px #ACACAC, 15px 15px 0px #CACACA;
+}
+
+.name {
+    margin-top: 10px;
+    margin-bottom: 110px;
+    p {
+        font-family: "Oswald", "Open Sans", sans-serif;
+        font-size: 5em;
+        color: rgba(89, 89, 89, 1);
+        letter-spacing: 5px;
+
+        strong {
+            color: #3f8eea;
+        }
+    }
+
+    small {
+        font-weight: 100;
+        font-size: 2em;
+        color: #AAA;
+        letter-spacing: 3px;
+    }
+
+}
+
+.tag-title {
+    color: #8D8D8D;
+    font-weight: 100;
+    font-size: 4em;    
+}
+
+.bordered {
+    //background: #dddddd;
+    margin-right: 20px;
+}
+
+.post-list {
+    margin-top: 10px;
+
+}
+
+.post {
+    margin: 0px;
+  //  padding: 5px;
+    //padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+//    box-shadow: -5px -5px 0px 0px #BBB, -10px -10px 0px 0px #DBDBDB, -15px -15px 0px #EEE;
+
+    width: 100%;
+    max-width: 1000px;
+}
+
+.post-full {
+
+    margin: auto;
+}
+
+
+.post-title {
+    color: rgba(89, 89, 89, 1);
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.post-subtitle {
+    margin-bottom: 5px;
+}
+
+.post-content {
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1.5;
+    color: #4d4e53;
+    font-size: 16px;
+
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+}
+
+.post-summary em {
+    color: lighten(#111111, 20%);
+}
+
+.post-summary p {
+    font-size: 1.5em;
+    color: #50585D;
+}
+
+.blog-logo img {
+    min-height: 200px;
+}
+
+// Mobile Corrections
+
+.col-xs-12 {
+    .name {
+        padding-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+
+        p {
+            line-height: 70px;
+        }
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+}
+
+
+@import "ui";
